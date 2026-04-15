@@ -11,5 +11,3 @@ def query_model(prompt: str) -> str:
         max_tokens=512,
     )
     return response.choices[0].message.content
-
-print(query_model("What is 7+3?"))
