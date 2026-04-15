@@ -1,7 +1,7 @@
 from openai import OpenAI
 client = OpenAI()
 
-def query_model(prompt: str) -> str:
+def query_model(prompt: str, token_limit: int = 512) -> str:
     response = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[

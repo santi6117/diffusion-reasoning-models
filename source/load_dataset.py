@@ -6,4 +6,3 @@ def get_dataset(n=100):
 
 def extract_answer(answer_text):
     return answer_text.split("#### ")[-1].strip()
-
