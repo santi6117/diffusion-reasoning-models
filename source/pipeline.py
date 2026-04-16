@@ -132,7 +132,7 @@ def main():
     dataset = get_dataset(100)
     results = run_experiment_1(dataset, flag_print=True)
     df = pd.DataFrame(results)
-    df.to_csv("experiment_1_results.csv", index=False)
+    df.to_csv("experiment_1_results_4o.csv", index=False)
 
     # summary of results 
     print("\n=== Summary of Results ===")
